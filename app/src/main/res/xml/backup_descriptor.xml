@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- TODO Remove the following "exclude" elements to make them a part of the auto backup -->
+    <exclude
+        domain="database"
+        path="MyAwsomeQuaizAbbervsion.db" />
+    <exclude
+        domain="database"
+        path="MyAwsome.db" />
+    <exclude
+        domain="database"
+        path="MyAwsomeQuaizExtin.db" />
+    <exclude
+        domain="database"
+        path="MyAwsomeQuaizVoca.db" />
+    <exclude
+        domain="database"
+        path="MyAwsomeQuaizComp.db" />
+    <exclude
+        domain="database"
+        path="MyAwsomeQuaizFulll.db" />
+    <!-- Exclude the shared preferences file that contains the GCM registrationId -->
+    <exclude
+        domain="sharedpref"
+        path="saveData.xml" />
+    <exclude
+        domain="sharedpref"
+        path="sharedprefs.xml" />
+    <exclude
+        domain="sharedpref"
+        path="SaveScore.xml" />
+</full-backup-content>

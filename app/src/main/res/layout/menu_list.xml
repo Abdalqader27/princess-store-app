@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--By Mark Gurney [CC BY 3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons -->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:onClick="toggleDetails"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:padding="8dp">-->
+
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/imageViewExpand"-->
+    <!--                android:layout_width="24dp"-->
+    <!--                android:layout_height="24dp"-->
+    <!--                android:background="@android:color/transparent"-->
+    <!--                android:contentDescription="TODO"-->
+    <!--                app:srcCompat="@mipmap/more" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="end"-->
+    <!--                android:padding="5dp"-->
+    <!--                android:text="فلترة حسب :"-->
+    <!--                android:textColor="@color/black" />-->
+
+    <!--        </LinearLayout>-->
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="50dp"
+        android:src="@drawable/ic_undraw_contract_uy56"
+         />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.xw.repo.widget.BounceScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/img"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <RelativeLayout
+                    android:id="@+id/share_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round20"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_setting1"
+                        android:layout_width="30dp"
+                        android:padding="5dp"
+                        android:background="@drawable/background_button_grey"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_share" />
+
+                    <View
+                        android:id="@+id/view_settings1"
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/img_setting1"
+                        android:background="@color/grey_Light" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toStartOf="@id/view_settings1"
+                        android:text="شارك التطبيق  "
+                        android:textColor="@color/colorPrimary"
+                        />
+                </RelativeLayout>
+
+
+
+<!--                <RelativeLayout-->
+
+<!--                    android:foreground="?selectableItemBackground"-->
+<!--                    android:clickable="true"-->
+<!--                    android:id="@+id/settings_card"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/rectangle_nostroke"-->
+<!--                    android:padding="5dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/img_setting"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:background="@drawable/background_button_grey"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:src="@drawable/ic_settings" />-->
+
+<!--                    <View-->
+<!--                        android:id="@+id/view_settings"-->
+<!--                        android:layout_width="1dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_toStartOf="@id/img_setting"-->
+<!--                        android:background="@color/grey_Light" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:layout_toStartOf="@id/view_settings"-->
+<!--                        android:text="الأعدادات "-->
+<!--                        android:textColor="@color/colorPrimary"-->
+<!--                        />-->
+<!--                </RelativeLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/round20"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/sendProblem"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_setting"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/background_button_grey"
+                            android:layout_alignParentEnd="true"
+                            android:padding="5dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_bug" />
+
+                        <View
+                            android:id="@+id/view_settings"
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@id/img_setting"
+                            android:background="@color/grey_Light" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_toStartOf="@id/view_settings"
+                            android:text="إبلاغ عن مشكلة  "/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/about"
+                        android:padding="5dp"
+                        android:foreground="?selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_setting"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="5dp"
+                            android:background="@drawable/background_button_grey"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_info" />
+
+                        <View
+                            android:id="@+id/view_settings"
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@id/img_setting"
+                            android:background="@color/grey_Light" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_toStartOf="@id/view_settings"
+                            android:text="حول التطبيق "/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </com.xw.repo.widget.BounceScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

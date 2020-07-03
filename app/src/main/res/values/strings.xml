@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name"> برنسيسة</string>
+    <string name="princesa_stroe">متجر برنسيسة</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAbM-O7k6DN31LvKFqdSTpQ4NOMF0R8BSo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

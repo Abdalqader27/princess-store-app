@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "957359998800",
+    "firebase_url": "https://princess-store-24108.firebaseio.com",
+    "project_id": "princess-store-24108",
+    "storage_bucket": "princess-store-24108.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957359998800:android:74c3c69057c939e0ae0e55",
+        "android_client_info": {
+          "package_name": "com.abdalqader27.princessstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957359998800-idm0htbv79521j663ffpb6rrn2r7f69r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn9H9Onc3qeVDxwAkFYIROA7KkRg6dDYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957359998800-idm0htbv79521j663ffpb6rrn2r7f69r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

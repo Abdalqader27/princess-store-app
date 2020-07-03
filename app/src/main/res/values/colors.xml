@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#263238</color>
+    <color name="colorPrimaryDark">#000a12</color>
+
+
+    <color name="colorTextPrimary">#ffffff</color>
+    <color name="colorTextSecondary">#A3FFFFFF</color>
+
+    <color name="footer_bg">#F6F6F6</color>
+    <color name="footer_or_text_color">#98A4B3</color>
+    <!--    <color name="colorPrimaryDark">#A8161B</color>-->
+    <color name="colorAccent">#D81B60</color>
+    <color name="grey">#bfbfbf</color>
+
+    <color name="white">#fff</color>
+    <color name="grey_Light">#f7f7f7</color>
+    <color name="black">#000000</color>
+    <color name="gray">#c1c1c1</color>
+
+    <color name="black_20">#33000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="orange">#FA9301</color>
+    <color name="green">#2E7D32</color>
+    <!-- Screens background color-->
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#D42A26</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="grey2">#e6e6e6</color>
+    <color name="blacko">#37373C</color>
+    <color name="backber">#57727F</color>
+    <color name="colorBackground" tools:keep="@color/colorBackground">#241445</color>
+    <color name="separatorColor" tools:keep="@color/separatorColor">#18102C</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen4</item>
+
+    </array>
+    <color name="shadow">#66000000</color>
+
+    <color name="mdtp_white">#ffffff</color>
+    <color name="mdtp_background_color">@color/mdtp_white</color>
+    <color name="mdtp_circle_background">@color/mdtp_background_color</color>
+    <color name="mdtp_circle_color">#f5f5f5</color>
+    <color name="mdtp_line_background">#cccccc</color>
+    <color name="mdtp_ampm_text_color">@color/mdtp_numbers_text_color</color>
+    <color name="mdtp_done_text_color_normal">#ff212121</color>
+    <color name="mdtp_done_text_color_disabled">#cccccc</color>
+    <color name="mdtp_numbers_text_color">#ff212121</color>
+
+    <color name="mdtp_transparent_black">#7f000000</color>
+    <color name="mdtp_accent_color">#009688</color>
+    <color name="mdtp_accent_color_focused">#76ffffff</color>
+    <color name="mdtp_neutral_pressed">#33999999</color>
+    <color name="mdtp_accent_color_dark">#00796b</color>
+    <color name="mdtp_date_picker_text_normal">#ff212121</color>
+    <color name="mdtp_date_picker_text_highlighted">@color/mdtp_date_picker_text_normal</color>
+    <color name="mdtp_date_picker_text_disabled">#ccc</color>
+    <color name="mdtp_date_picker_month_day">#767676</color>
+
+    <!-- Stock Theme -->
+    <color name="circle_background">#f2f2f2</color>
+    <!--<color name="line_background">#cccccc</color>-->
+    <color name="ampm_text_color">#8c8c8c</color>
+    <color name="done_text_color_normal">#000000</color>
+    <!--<color name="done_text_color_disabled">#cccccc</color>-->
+    <color name="numbers_text_color">#8c8c8c</color>
+    <!--<color name="transparent_black">#7f000000</color>-->
+
+    <color name="blue">#33b5e5</color>
+    <color name="blue_focused">#c1e8f7</color>
+    <!--<color name="neutral_pressed">#33999999</color>-->
+    <color name="darker_blue">#0099cc</color>
+    <color name="date_picker_text_normal">#ff999999</color>
+    <!--<color name="date_picker_text_disabled">#ccc</color>-->
+    <color name="calendar_header">#999999</color>
+    <color name="date_picker_view_animator">#f2f2f2</color>
+    <color name="calendar_selected_date_text">#ffd1d2d4</color>
+
+    <!-- DatePicker Dark Theme -->
+    <color name="mdtp_date_picker_view_animator_dark_theme">@color/light_gray</color>
+    <color name="mdtp_date_picker_text_normal_dark_theme">@color/mdtp_white</color>
+    <color name="mdtp_date_picker_month_day_dark_theme">#b4b4b4</color>
+    <color name="mdtp_date_picker_text_disabled_dark_theme">#767676</color>
+    <color name="mdtp_date_picker_text_highlighted_dark_theme">@color/mdtp_date_picker_text_normal_dark_theme</color>
+
+    <color name="mdtp_calendar_header">@color/mdtp_accent_color_dark</color>
+    <color name="mdtp_date_picker_view_animator">@android:color/white</color>
+    <color name="mdtp_date_picker_view_animator_dark">#80CBC4</color>
+    <color name="mdtp_calendar_selected_date_text">#ffd1d2d4</color>
+
+    <color name="mdtp_button_color">@color/mdtp_accent_color</color>
+    <color name="mdtp_button_selected">#33969696</color>
+
+    <color name="date_picker_selector_selected_dark_theme">#111A19</color>
+    <color name="date_picker_selector_unselected_dark_theme">#76111A19</color>
+
+    <!-- TimePicker Dark Theme -->
+    <!--<color name="mdtp_circle_background_dark_theme">#525252</color>-->
+
+    <!-- Colors for red theme -->
+    <!--<color name="red">@color/mdtp_accent_color</color>-->
+    <!--<color name="red_focused">@color/mdtp_accent_color_dark</color>-->
+    <!--<color name="light_gray">#424242</color>-->
+    <!--<color name="dark_gray">#323232</color>-->
+    <!--<color name="line_dark">#808080</color>-->
+    <!--<color name="done_text_color_dark_normal">#ffffff</color>-->
+    <!--<color name="done_text_color_dark_disabled">#888888</color>-->
+    <!--<color name="done_disabled_dark">#bfbfbf</color>-->
+
+    <color name="red">#ff3333</color>
+    <color name="red_focused">#853333</color>
+    <color name="light_gray">#404040</color>
+    <color name="dark_gray">#363636</color>
+    <color name="line_dark">#808080</color>
+    <color name="done_text_color_dark_normal">#ffffff</color>
+    <color name="done_text_color_dark_disabled">#888888</color>
+    <color name="done_disabled_dark">#bfbfbf</color>
+    <!-- DatePicker Dark Theme -->
+
+    <!-- TimePicker Dark Theme -->
+
+    <!-- Colors for red theme -->
+    <color name="color4">#EC8F52</color>
+
+</resources>

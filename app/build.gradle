@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.abdalqader27.princessstore"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+//            minifyEnabled true
+//            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'nl.psdcompany:duo-navigation-drawer:3.0.0'
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.1.0'
+    implementation 'com.github.woxingxiao:BounceScrollView:1.3'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
+    implementation 'androidx.constraintlayout:constraintlayout-solver:2.0.0-beta4'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'br.com.simplepass:loading-button-android:2.1.5'
+    implementation 'com.fxn769:bubbletabbar:1.0.3'
+    implementation 'com.diegodobelo.expandingview:expanding-view:0.9.4'
+    implementation 'com.infideap.drawerbehavior:drawer-behavior:0.0.7'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.instabug.library:instabug:8.2.2'
+    implementation 'com.github.andremion:counterfab:1.2.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.14.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation "com.github.parse-community.Parse-SDK-Android:parse:1.18.5"
+    implementation "com.mlsdev.animatedrv:library:1.0.1"
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'me.everything:overscroll-decor-android:1.0.4'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.crowdfire.cfalertdialog:cfalertdialog:1.1.0'
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7'
+    implementation 'com.github.IslamKhSh:CardSlider:1.0.1'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.0.pr2'
+    implementation 'com.annimon:stream:1.2.1'
+    implementation 'com.github.searchy2:CustomAlertViewDialogue:2.6.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+    implementation 'com.jsibbold:zoomage:1.2.0'
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.4'
+    implementation 'com.google.firebase:firebase-core:17.3.0'
+}

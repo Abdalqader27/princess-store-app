@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:id="@+id/activity_with_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/grey_Light"
+        tools:context=".features.viewpager.WithViewPagerActivity">
+<!--<ImageView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_centerInParent="true"-->
+<!--    android:tint="@color/grey_Light"-->
+<!--    android:src="@drawable/ic_offer"/>-->
+
+        <!--        <me.ibrahimsn.lib.SmoothBottomBar-->
+        <!--            android:id="@+id/bottomBar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="?actionBarSize"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_gravity="bottom"-->
+        <!--            app:backgroundColor="@color/white"-->
+        <!--            app:duration="200"-->
+        <!--            app:activeItem="@integer/cfdialog_animation_duration_500"-->
+        <!--            app:iconSize="24dp"-->
+        <!--            app:indicatorRadius="12dp"-->
+        <!--            app:itemFontFamily="@font/sst_arabic_medium"-->
+        <!--            app:iconTint="#C85F5858"-->
+        <!--            app:iconTintActive="@color/colorPrimary"-->
+        <!--            app:indicatorColor="#2D252525"-->
+        <!--            app:itemPadding="10dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:menu="@menu/menu"-->
+        <!--            app:sideMargins="10dp"-->
+        <!--            app:textColor="@color/black"-->
+        <!--            app:textSize="14sp" />-->
+
+
+        <FrameLayout
+            android:id="@+id/container_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit_recycler"
+            style="@style/SpinKitView.ThreeBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:visibility="visible"
+            app:SpinKit_Color="@color/black" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/spin_kit_recycler"
+            android:text="الرجاء الانتظار"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/noInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<ImageView
+    android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_centerInParent="true"
+    android:src="@drawable/ic_undraw_empty_xct9"
+    />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/image"
+            android:text="لايوجد أنترنت "
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
